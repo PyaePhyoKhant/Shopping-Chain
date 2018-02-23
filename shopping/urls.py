@@ -25,6 +25,6 @@ router.register(r'block', block_api.BlockViewSet, base_name='block')
 
 urlpatterns = [
     url(r'^api/', include(router.urls)),
-    url(r'^blockchain/', include('blockchain.urls')),
+    url(r'^$', include('blockchain.urls')),
     url(r'^admin/', admin.site.urls),
 ]
